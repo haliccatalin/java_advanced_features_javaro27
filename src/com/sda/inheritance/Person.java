@@ -8,4 +8,8 @@ public class Person {
         this.name = name;
         this.cnp = cnp;
     }
+
+    public String getName() {
+        return this.name;
+    }
 }

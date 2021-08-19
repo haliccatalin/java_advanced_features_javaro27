@@ -8,4 +8,6 @@ public class Paznic extends Person {
         super(name, cnp);
         this.openDoor = openDoor;
     }
+
+
 }

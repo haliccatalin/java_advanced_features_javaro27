@@ -17,5 +17,9 @@ public class Main {
         child1.printUsernameAndEmail();
 
         Parent parent1 = new Parent("popescu", "mihai@gmail.com");
+
+        CaineDePaza caineDePaza1 = new CaineDePaza("Rex", "132412312", false, "rosie");
+
+        caineDePaza1.getName();
     }
 }
