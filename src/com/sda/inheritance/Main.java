@@ -21,5 +21,16 @@ public class Main {
         CaineDePaza caineDePaza1 = new CaineDePaza("Rex", "132412312", false, "rosie");
 
         caineDePaza1.getName();
+
+        // ASA DA
+
+        // Un parinte poate sa fie initializat cu o clasa copil, pentru ca un copil contine tot ce contine parintele + alte elemente
+        Parent p1 = new Child("catalin", "test@gest.com", 20);
+
+
+        // ASA NU
+        // Un copil nu poate fi initializat cu un parinte, pentru ca parintele nu contine ce contine copilul.
+//        Child c1 = new Parent("test", "test@gmail.com");
+
     }
 }

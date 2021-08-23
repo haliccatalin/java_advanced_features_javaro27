@@ -12,4 +12,8 @@ public class Person {
     public String getName() {
         return this.name;
     }
+
+    public void printPersonName() {
+        System.out.println(this.name);
+    }
 }

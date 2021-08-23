@@ -9,5 +9,8 @@ public class Paznic extends Person {
         this.openDoor = openDoor;
     }
 
+    public void printPaznicName() {
+        System.out.println("Paznic name!");
+    }
 
 }
