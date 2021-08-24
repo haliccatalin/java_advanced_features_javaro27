@@ -1,27 +1,23 @@
 package com.sda.abstraction;
 
 import com.sda.abstraction.interfaces.FisaPostuluiInginer;
+import com.sda.abstraction.interfaces.FisaPostuluiInginerAuto;
 
-public class Inginer extends Angajat implements FisaPostuluiInginer {
+public class InginerAuto extends Angajat implements FisaPostuluiInginer, FisaPostuluiInginerAuto {
 
-    public Inginer(String name, String phone) {
+    public InginerAuto(String name, String phone) {
         super(name, phone);
     }
 
-    // cand extindem o clasa abstracta care contine metode
-    // abstracte SUNTEM OBILIGATI  sa suprascriem METODELE ABSTRACTE
-    // din clasa parinte
-
     @Override
     public void startWorking() {
-        System.out.println("Inginerul bea cafea!");
+
     }
 
     @Override
     public void stopWorking() {
-        System.out.println("Inginerul ramane peste program!");
-    }
 
+    }
 
     @Override
     public void technicMeet() {
@@ -46,5 +42,15 @@ public class Inginer extends Angajat implements FisaPostuluiInginer {
     @Override
     public double calculateHeight() {
         return 0;
+    }
+
+    @Override
+    public void checkCar() {
+
+    }
+
+    @Override
+    public void driveTestCar() {
+
     }
 }

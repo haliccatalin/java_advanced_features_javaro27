@@ -20,9 +20,16 @@ package com.sda.abstraction;
  *    - constructori                           - constructori
  */
 
+// com.sda.abstraction.Angajat.java
 public abstract class Angajat {
     private String name;
     private String phone;
+
+    // static -> aloca spatiu in memorie la rularea aplicatie
+//            -> daca avem 100 de obiecte de tipul Angajat, toate cele 100 de obiecte vor avea un singur ID
+//            - adica,daca din 100 de obiecte luam unul si ii modificam ID-ul = 10, toate obiectele vor avea ID = 10;
+//            - static se aplica si in cadrul metodelor, claselor
+    public static int ID = 0;
 
     public Angajat(String name, String phone) {
         this.name = name;
