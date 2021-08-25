@@ -11,4 +11,8 @@ public class Animal {
         System.out.println("Clasa Animal!");
         System.out.println("Make sound!");
     }
+
+    public String getName() {
+        return this.name;
+    }
 }

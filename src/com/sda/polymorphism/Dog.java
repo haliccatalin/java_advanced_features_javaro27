@@ -22,4 +22,8 @@ public class Dog extends Animal {
         System.out.println(sound + ", " + sound);
     }
 
+    public void stay() {
+        System.out.println("Stay");
+    }
+
 }
