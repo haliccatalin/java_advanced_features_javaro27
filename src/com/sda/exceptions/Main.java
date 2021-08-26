@@ -19,6 +19,8 @@ public class Main {
 
         System.out.println("-----------------------------");
 
+
+
         try {
             // pun metoda in try catch pentru ca stiu ca la un moment dat aceasta poate sa arunce o exceptie
             testCnpThrows();
