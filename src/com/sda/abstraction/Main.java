@@ -14,6 +14,16 @@ public class Main {
         // ABSTRACTE SUNTEM OBILIGATI SA IMPLEMENTAM METODELE ABSTRACTE!!!
 
         Angajat angajatAnonim = new Angajat("Popescu", "3123123123") {
+
+            // angajatAnonim are aceasta proprietate, iar angajatAnonim2 nu o are
+            String numeAngajat = "Alex";
+
+            // angajatAnonim are aceasta metoda, iar angajatAnonim2 nu o are
+            public void printMessage() {
+                System.out.println(numeAngajat);
+            }
+
+
             @Override
             public void startWorking() {
 

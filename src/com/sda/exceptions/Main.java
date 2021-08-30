@@ -6,8 +6,8 @@ public class Main {
     // Exceptiile (sunt prietenele programatorului)
 
     // sunt de 2 tipuri
-//    1. Throwable => Exceptii de platforma (OutOfMemoryException)
-//    2. Exception => Exceptii de programare (OutOfBoundsException, NullPointerException, etc.)
+//    1. Throwable => Exceptii de platforma (Environment Exceptions)  (OutOfMemoryException)
+//    2. Exception => Exceptii de programare (Runtime Exceptions) (OutOfBoundsException, NullPointerException, etc.)
 
 
 //    Clasa Exception este copilul clasei Throwable;
@@ -18,7 +18,6 @@ public class Main {
 //        testCnp();
 
         System.out.println("-----------------------------");
-
 
 
         try {

@@ -195,10 +195,32 @@ public class Main {
             System.out.println("Key: " + entry.getKey() + " -> " + entry.getValue());
         }
 
-        Set<Map.Entry<String, String>> entrySet = new HashSet<>();
 
         System.out.println("------------");
         // de discutat despre iterator!
+
+
+        // adaugarea unei valori pentru o cheie existenta
+        if(dictionaryMap.containsKey("tractor")) {
+            // luam valoarea initiala
+            String oldValueTractor = dictionaryMap.get("tractor");
+
+            // la valoarea initiala adaugam noua valoarea
+            String newValueTractor = oldValueTractor + ", este un utilaj foarte scump";
+
+            // noua valoarea creata o adaugam in map, in locul celei vechi
+            dictionaryMap.put("tractor", newValueTractor);
+        }
+
+        Iterator<Map.Entry<String, String>> iteratorMap = dictionaryMap.entrySet().iterator();
+
+        // .hasNext() => daca mai exista un element, atunci mergi mai departe
+        while(iteratorMap.hasNext()) {
+            // .next() => acceseaza elementul
+            Map.Entry<String, String> entry = iteratorMap.next();
+
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
 
 
     }
