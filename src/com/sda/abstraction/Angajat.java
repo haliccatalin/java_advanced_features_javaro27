@@ -1,5 +1,7 @@
 package com.sda.abstraction;
 
+import com.sda.abstraction.interfaces.FisaPostuluiContabil;
+
 /**
  * abstract -> ne permite sa definim o clasa abstracta
  *          -> ne permite sa avem metode fara bloc de cod (functionalitate)
@@ -21,7 +23,7 @@ package com.sda.abstraction;
  */
 
 // com.sda.abstraction.Angajat.java
-public abstract class Angajat {
+public abstract class Angajat  {
     private String name;
     private String phone;
 

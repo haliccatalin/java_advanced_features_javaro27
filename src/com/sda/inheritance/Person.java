@@ -13,6 +13,10 @@ public class Person {
         return this.name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void printPersonName() {
         System.out.println(this.name);
     }
