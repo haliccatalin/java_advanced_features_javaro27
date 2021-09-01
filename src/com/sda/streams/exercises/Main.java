@@ -3,6 +3,7 @@ package com.sda.streams.exercises;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * 1. Using streams, for a given lists:
@@ -44,6 +45,20 @@ public class Main {
                 .forEach((number) -> System.out.println(number));
 
         System.out.println("\nd) Print names uppercase.");
+        namesList.stream()
+                .map((name) -> name.toUpperCase(Locale.ROOT))
+                .forEach((name) -> System.out.println(name));
+        System.out.println("\n e) Remove first and last letter, sort and print names.");
+        namesList.stream()
+                .map((name) -> name.substring(1,name.length() -1))
+                .sorted()
+                .forEach((name) -> System.out.println(name));
+        System.out.println("\n f) *Sort backwards by implementing reverse Comparator and using lambda\n" +
+                " * expression.");
+        namesList.stream()
+                .sorted((name1,name2) -> name2.compareTo(name1))
+                .forEach((name) -> System.out.println(name));
+
 
 
     }
