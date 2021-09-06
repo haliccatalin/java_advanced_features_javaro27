@@ -1,0 +1,4 @@
+Patric, Ban, 123456789
+Catalin, Halic, 9876543121
+Cristi, Murarescu, 135798642
+Darie, Leonte, 345678912
