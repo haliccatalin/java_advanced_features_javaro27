@@ -41,8 +41,10 @@ public class Main {
 //         brand = sc.nextLine();
 //        Car car = new Car(model ,brand);
 //        System.out.println(car);
-        buyCar(sc);
-        buyBike(sc);
+//        buyCar(sc);
+//        buyBike(sc);
+
+        System.out.println("--------------");
     }
     public static void buyCar(Scanner scanner){
 
